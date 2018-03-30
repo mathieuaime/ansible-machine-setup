@@ -1,0 +1,21 @@
+---
+
+- name: Install vlc
+  apt:
+    name: vlc
+    update_cache: yes
+  become: yes
+
+- name: Install audacity
+  apt:
+    name: audacity
+    update_cache: yes
+  become: yes
+
+- name: add google repo key
+  apt_key:
+    url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+    state: present
+  become: yes
+
+- include: spotify.yml

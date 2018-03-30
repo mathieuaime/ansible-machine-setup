@@ -1,0 +1,7 @@
+---
+
+- name: Install terminator
+  apt:
+    name: terminator
+    update_cache: yes
+  become: yes

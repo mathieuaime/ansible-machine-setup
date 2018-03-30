@@ -1,0 +1,5 @@
+---
+  - include: pre.yml
+  - include: browser.yml
+  - include: numix.yml
+  - include: dropbox.yml

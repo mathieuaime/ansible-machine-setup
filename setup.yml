@@ -1,0 +1,9 @@
+---
+
+- name: Install stuff i used to do
+  hosts: local
+  connection: local
+  roles:
+    - common
+    - dev
+    - multimedia

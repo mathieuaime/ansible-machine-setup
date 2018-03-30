@@ -1,0 +1,14 @@
+---
+
+- name: download visual studio code repo
+  get_url:
+    url: https://go.microsoft.com/fwlink/?LinkID=760868
+    dest: "{{ ansible_env.HOME }}/setup//code.deb"
+    validate_certs: false
+  tags: vscode
+
+- name: install visual studio code
+  become: yes
+  apt: 
+    deb: "{{ ansible_env.HOME }}/setup//code.deb"
+  tags: vscode
