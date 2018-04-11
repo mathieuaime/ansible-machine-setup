@@ -1,0 +1,6 @@
+---
+- name: install gparted
+  apt:
+    name: gparted
+    update_cache: yes
+  become: yes

@@ -3,3 +3,4 @@
   - include: browser.yml
   - include: numix.yml
   - include: dropbox.yml
+  - include: misc.yml

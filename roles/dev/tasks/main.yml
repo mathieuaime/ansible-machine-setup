@@ -2,5 +2,6 @@
   - include: pre.yml 
   - include: java.yml
   - include: vscode.yml 
+  - include: intellij.yml 
   - include: node.yml
   - include: docker.yml
